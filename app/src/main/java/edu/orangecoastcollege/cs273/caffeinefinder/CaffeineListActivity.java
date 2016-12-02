@@ -70,6 +70,7 @@ public class CaffeineListActivity extends AppCompatActivity
                     .addConectionCallbacks(this)
                     .addOnConnectionFailedListener(this)
                     .addApi(LocationServices.API).build();
+            mGoogleApiClient.connect();
         }
 
         // Define the interval for updates:
